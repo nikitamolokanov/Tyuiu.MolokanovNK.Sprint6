@@ -62,7 +62,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task0.V5
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ИБКСб-25-1 Молоканов Никита Константинович", "Сообщение");
+            MessageBox.Show("Таск 0 выполнил студент группы ИБКСб-25-1 Молоканов Никита Константинович", "Сообщение"); 
         }
     }
 }
