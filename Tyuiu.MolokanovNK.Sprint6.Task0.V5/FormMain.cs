@@ -24,7 +24,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task0.V5
             DataService ds = new DataService();
             try
             {
-                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX.Text)));
+                textBoxResut.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarA.Text)));
             }
             catch
             {
