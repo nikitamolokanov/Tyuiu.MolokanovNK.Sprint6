@@ -14,7 +14,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task4.V30.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = 5 * x + 2.5 / (Math.Sin(x) + 2) + 2 * x + 2;
+                y = (5 * x + 2.5) / (Math.Sin(x) + 2) + 2 * x + 2;
                 valueArray[count] = Math.Round(y, 2);
                 count++;
             }
