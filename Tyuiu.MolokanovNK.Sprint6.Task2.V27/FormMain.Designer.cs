@@ -43,9 +43,9 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
             groupInput_MNK = new GroupBox();
             groupResult_MNK = new GroupBox();
             dataGridViewFunction_MNK = new DataGridView();
-            chartFunction_MNK = new System.Windows.Forms.DataVisualization.Charting.Chart();
             X = new DataGridViewTextBoxColumn();
             Columns = new DataGridViewTextBoxColumn();
+            chartFunction_MNK = new System.Windows.Forms.DataVisualization.Charting.Chart();
             groupTask_MNK.SuspendLayout();
             groupInput_MNK.SuspendLayout();
             groupResult_MNK.SuspendLayout();
@@ -59,6 +59,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
             textBoxStopStep_MNK.Name = "textBoxStopStep_MNK";
             textBoxStopStep_MNK.Size = new Size(121, 23);
             textBoxStopStep_MNK.TabIndex = 1;
+            textBoxStopStep_MNK.TextChanged += textBoxStopStep_MNK_TextChanged;
             // 
             // textBoxStartStep_MNK
             // 
@@ -160,6 +161,18 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
             dataGridViewFunction_MNK.TabIndex = 9;
             dataGridViewFunction_MNK.CellContentClick += dataGridViewFunction_MNK_CellContentClick;
             // 
+            // X
+            // 
+            X.HeaderText = "X";
+            X.Name = "X";
+            X.Width = 50;
+            // 
+            // Columns
+            // 
+            Columns.HeaderText = "F(X)";
+            Columns.Name = "Columns";
+            Columns.Width = 50;
+            // 
             // chartFunction_MNK
             // 
             chartArea1.Name = "ChartArea1";
@@ -178,18 +191,6 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
             chartFunction_MNK.TabIndex = 8;
             chartFunction_MNK.Text = "chart1";
             chartFunction_MNK.Click += chart1_Click;
-            // 
-            // X
-            // 
-            X.HeaderText = "X";
-            X.Name = "X";
-            X.Width = 50;
-            // 
-            // Columns
-            // 
-            Columns.HeaderText = "F(X)";
-            Columns.Name = "Columns";
-            Columns.Width = 50;
             // 
             // FormMain_MNK
             // 

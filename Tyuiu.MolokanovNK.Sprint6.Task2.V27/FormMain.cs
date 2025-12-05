@@ -7,7 +7,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
         {
             InitializeComponent();
         }
-       
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -26,7 +26,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
                 int startStep = Convert.ToInt32(textBoxStartStep_MNK.Text);
                 int stoptStep = Convert.ToInt32(textBoxStopStep_MNK.Text);
 
-                
+
                 int len = ds.GetMassFunction(startStep, stoptStep).Length;
 
                 double[] valueArray;
@@ -70,6 +70,11 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task2.V27
         }
 
         private void buttonDone_MNK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBoxStopStep_MNK_TextChanged(object sender, EventArgs e)
         {
 
         }

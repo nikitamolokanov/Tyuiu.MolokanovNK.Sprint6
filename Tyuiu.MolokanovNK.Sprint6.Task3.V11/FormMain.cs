@@ -78,7 +78,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task3.V11
 
         }
 
-        private void buttonDone_MNK_KeyPress(object sender, KeyPressEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }

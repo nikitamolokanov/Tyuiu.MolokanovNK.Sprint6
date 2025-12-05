@@ -1,4 +1,5 @@
 ﻿
+
 namespace Tyuiu.MolokanovNK.Sprint6.Task3.V11
 {
     partial class FormMain_MNK
@@ -130,7 +131,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task3.V11
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(794, 450);
             Controls.Add(dataGridViewMatrix_MNK);
             Controls.Add(groupResult_MNK);
             Controls.Add(groupTask_MNK);
@@ -145,6 +146,11 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task3.V11
             groupResult_MNK.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix_MNK).EndInit();
             ResumeLayout(false);
+        }
+
+        private void buttonDone_MNK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
 
