@@ -41,6 +41,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task5.V15
             buttonOpenFile_MNK = new Button();
             buttonHelp_MNK = new Button();
             groupBoxResult_MNK = new GroupBox();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)chartGraph_MNK).BeginInit();
             groupTask_MNK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewResult_MNK).BeginInit();
@@ -133,17 +134,27 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task5.V15
             groupBoxResult_MNK.TabStop = false;
             groupBoxResult_MNK.Text = "Вывод данных";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(794, 187);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 7;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(983, 450);
+            Controls.Add(textBox1);
             Controls.Add(groupBoxResult_MNK);
             Controls.Add(buttonHelp_MNK);
             Controls.Add(buttonOpenFile_MNK);
             Controls.Add(buttonDone_MNK);
             Controls.Add(groupTask_MNK);
             Controls.Add(chartGraph_MNK);
+            MaximizeBox = false;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 5 | Вариант 15 | Молоканов Н.К.";
             Load += FormMain_Load;
@@ -153,6 +164,7 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task5.V15
             ((System.ComponentModel.ISupportInitialize)dataGridViewResult_MNK).EndInit();
             groupBoxResult_MNK.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -170,5 +182,6 @@ namespace Tyuiu.MolokanovNK.Sprint6.Task5.V15
         private Button buttonOpenFile_MNK;
         private Button buttonHelp_MNK;
         private GroupBox groupBoxResult_MNK;
+        private TextBox textBox1;
     }
 }
